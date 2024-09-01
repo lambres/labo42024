@@ -1,0 +1,12 @@
+<h1>Ejercicio 1 Clase 1</h1>
+
+<input type="number" placeholder="Edad Uno" [(ngModel)]="edadUno"><br>
+<input type="number" placeholder="Edad Dos" [(ngModel)]="edadDos"><br>
+<button (click)="calcular()">Calcular</button><br>
+<button (click)="limpiar()">Limpiar</button><br>
+@if ((mostrar)){
+    <label for="promedio">Promedio</label><br>
+    <input type="number" id="promedio" placeholder="Promedio" [(ngModel)]="valPromedio"><br>
+    <label for="suma">Suma</label><br>
+    <input type="number" id="suma" placeholder="Promedio" [(ngModel)]="valSuma"><br>
+}

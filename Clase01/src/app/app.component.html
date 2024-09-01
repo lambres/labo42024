@@ -1,0 +1,32 @@
+<!-- <router-outlet /> -->
+<h1 class="miClase">{{ title }}</h1>
+
+<input type="number" placeholder="Edad" [(ngModel)]="edad" />
+<p>{{ edad }}</p>
+<p></p>
+<input type="number" placeholder="Numero1" [(ngModel)]="numero1" />
+<p></p>
+<input type="number" placeholder="Numero2" [(ngModel)]="numero2" />
+<p></p>
+<button (click)="sumar2()">Sumar</button>
+
+<p>{{ suma }}</p>
+
+<mi-componente *ngIf="suma > 10"></mi-componente>
+
+@if (suma > 10) {
+  <mi-componente></mi-componente>
+}
+<button (click)="borrar()">Borrar</button>
+@for (item of items2; track $index) {
+  <p>{{ item.name }}</p>
+}
+
+<p *ngFor="let item of items">{{ item }}</p>
+
+<div *ngIf="variable">
+  <p>Variable definida</p>
+</div>
+
+<button (click)="borrar2()">Borrar2</button>
+
